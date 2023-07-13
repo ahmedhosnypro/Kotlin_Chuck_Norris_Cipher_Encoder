@@ -1,6 +1,13 @@
 package chucknorris
 
 fun main() {
-    println("Input string:")
-    println(readln().chunked(1).joinToString(" "))
+    println("Input string:\n")
+    readln()
+        .apply {
+            println("The result:")
+        }
+        .toCharArray()
+        .forEach {
+            println("$it = ${it.code.toString(2).padStart(7, '0')}")
+        }
 }

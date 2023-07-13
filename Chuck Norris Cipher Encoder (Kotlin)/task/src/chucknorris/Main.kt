@@ -1,5 +1,6 @@
 package chucknorris
 
 fun main() {
-    println("Hello World!")
+    println("Input string:")
+    println(readln().chunked(1).joinToString(" "))
 }
